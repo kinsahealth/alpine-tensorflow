@@ -25,13 +25,21 @@ docker-machine create -d virtualbox --virtualbox-cpu-count=2 --virtualbox-memory
 ```
 
 This command really take a long time(8 hours using the machine above)
-```docker build -t alpine-tensorflow .```
+```
+docker build -t alpine-tensorflow 
+```
 
 Run the docker Dockerfile, set name alptf
-```docker run -d -it --name alptf alpine-tensorflow ```
+```
+docker run -d -it --name alptf alpine-tensorflow
+```
 
 If you want to see the files, this will open bash from image
-```docker exec -it alptf bash```
+```
+docker exec -it alptf bash
+```
 
 Copy the finished file to local
-```docker cp alptf:/tmp/tensorflow_pkg/ c:\tmp```
+```
+docker cp alptf:/tmp/tensorflow_pkg/ c:\tmp
+```
